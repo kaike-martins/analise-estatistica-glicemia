@@ -58,7 +58,7 @@ Python · pandas · SciPy (stats) · Matplotlib · Jupyter Notebook
 
 ```text
 ├── README.md                  → esta página
-├── relatorio_glicemia.docx    → relatório (método, resultados, gráficos, bibliografia)
+├── relatorio_glicemia.pdf    → relatório (método, resultados, gráficos, bibliografia)
 ├── analise_glicemia.ipynb     → notebook com todo o código (aquisição → limpeza → testes)
 └── glicemia_limpa.csv         → base tratada (393 registros)
 ```

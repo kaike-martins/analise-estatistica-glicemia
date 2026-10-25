@@ -2,7 +2,7 @@
 
 # Análise Estatística de um Experimento de Redução da Glicemia
 
-**Limpeza de dados e inferência estatística — teste de hipótese, valor-p e intervalo de confiança — sobre a eficácia de medicamentos e da dieta na redução da glicemia.**
+**Limpeza de dados e inferência estatística - teste de hipótese, valor-p e intervalo de confiança - sobre a eficácia de medicamentos e da dieta na redução da glicemia.**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
@@ -15,9 +15,9 @@
 
 ## Sobre o projeto
 
-Trabalho individual da disciplina **Aquisição e Preparação de Dados** (Bacharelado em Ciência de Dados, FMU). O projeto parte de uma base de 500 pacientes — propositalmente suja — e percorre o ciclo completo de dados em duas fases: **preparação** (limpeza rigorosa) e **análise estatística** (testes de hipótese).
+Trabalho individual da disciplina **Aquisição e Preparação de Dados** (Bacharelado em Ciência de Dados, FMU). O projeto parte de uma base de 500 pacientes, propositalmente suja e percorre o ciclo completo de dados em duas fases: **preparação** (limpeza rigorosa) e **análise estatística** (testes de hipótese).
 
-> **Sobre os dados:** a base é didática, fornecida pela disciplina e deliberadamente cheia de erros para exercitar a limpeza. O valor deste repositório está na **metodologia** — o rigor da limpeza e da inferência —, não em uma descoberta clínica do mundo real.
+> **Sobre os dados:** a base é didática, fornecida pela disciplina e deliberadamente cheia de erros para exercitar a limpeza. O valor deste repositório está na **metodologia** o rigor da limpeza e da inferência, não em uma descoberta clínica do mundo real.
 
 ## Objetivo
 
@@ -25,9 +25,9 @@ Cada paciente teve a glicemia medida antes e depois de um tratamento, recebeu ex
 
 ## Metodologia
 
-**Fase 1 — Preparação (pandas).** Diagnóstico em duas camadas, separando problemas de *formato* (texto grudado, vírgula decimal, datas em formatos mistos) de problemas de *plausibilidade* (glicemias negativas ou impossíveis, datas incoerentes). Principais tratamentos: padronização dos indicadores Sim/Não; remoção de registros logicamente inválidos (um medicamento por paciente); recuperação de valores de glicemia por faixa fisiológica; conversão e correção lógica de datas (inclusive 25 registros com início/fim invertidos, recuperados por evidência). Resultado: **500 → 393 registros válidos**.
+**Fase 1 - Preparação (pandas).** Diagnóstico em duas camadas, separando problemas de *formato* (texto grudado, vírgula decimal, datas em formatos mistos) de problemas de *plausibilidade* (glicemias negativas ou impossíveis, datas incoerentes). Principais tratamentos: padronização dos indicadores Sim/Não; remoção de registros logicamente inválidos (um medicamento por paciente); recuperação de valores de glicemia por faixa fisiológica; conversão e correção lógica de datas (inclusive 25 registros com início/fim invertidos, recuperados por evidência). Resultado: **500 → 393 registros válidos**.
 
-**Fase 2 — Análise (SciPy).** Teste t pareado para o efeito antes/depois; teste t de Welch para comparar grupos independentes (medicamentos e dieta); intervalo de confiança de 95% para dimensionar o efeito; e checagem de variável de confusão antes de concluir sobre a dieta.
+**Fase 2 - Análise (SciPy).** Teste t pareado para o efeito antes/depois; teste t de Welch para comparar grupos independentes (medicamentos e dieta); intervalo de confiança de 95% para dimensionar o efeito; e checagem de variável de confusão antes de concluir sobre a dieta.
 
 ## Principais resultados
 
